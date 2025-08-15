@@ -1,10 +1,15 @@
 
+
+using System.Diagnostics.Contracts;
+using Flunt.Validations;
 using PaymentContext.Domain.ValueObjects;
+using PaymentContext.Shared.Entities;
 
 namespace PaymentContext.Domain.Entities
 {
-    public class Student
+    public class Student : Entity
     {
+
         private IList<Subscription> _subscriptions;
         public Student(Name name, Document document, Email email)
         {
@@ -13,12 +18,12 @@ namespace PaymentContext.Domain.Entities
             _subscriptions = new List<Subscription>();
             Email = email;
 
+            AddNotifications(name, document, email);
         }
-
         public Name Name { get; private set; }
         public Document Document { get; private set; }
         public Email Email { get; private set; }
-        public string Address { get; private set; }
+        public Address Address { get; private set; }
 
         public IReadOnlyCollection<Subscription> Subscriptions
         {
@@ -30,13 +35,22 @@ namespace PaymentContext.Domain.Entities
 
         public void AddSubscription(Subscription subscription)
         {
-            foreach (var sub in Subscriptions)
+            var hasSubscriptionActive = false;
+
+            foreach (var sub in _subscriptions)
             {
-                sub.Inactivate();
-
-
+                sub.Activate();
+                hasSubscriptionActive = true;
             }
-            _subscriptions.Add(subscription);
+
+            // AddNotifications(new Contract<Student>()
+            // .Requires()
+            // .IsFalse(hasSubscriptionActive,"Student.Subscriptions","Student is Active")
+            // );
+
+            if (hasSubscriptionActive)
+                AddNotification("Student.Subscriptions", "Student is Active");
+
         }
     }
 }

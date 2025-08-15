@@ -46,6 +46,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "flunt": {
+              "target": "Package",
+              "version": "[2.0.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -104,6 +110,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "flunt": {
+              "target": "Package",
+              "version": "[2.0.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -172,19 +184,23 @@
           "dependencies": {
             "MSTest.TestAdapter": {
               "target": "Package",
-              "version": "[3.1.1, )"
+              "version": "[3.10.2, )"
             },
             "MSTest.TestFramework": {
               "target": "Package",
-              "version": "[3.1.1, )"
+              "version": "[3.10.2, )"
             },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[17.8.0, )"
+              "version": "[17.14.1, )"
             },
             "coverlet.collector": {
               "target": "Package",
               "version": "[6.0.0, )"
+            },
+            "flunt": {
+              "target": "Package",
+              "version": "[2.0.5, )"
             }
           },
           "imports": [

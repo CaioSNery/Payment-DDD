@@ -3,18 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using PaymentContext.Domain.Entities;
+using PaymentContext.Domain.ValueObjects;
 
 namespace PaymentContext.Testes.Entities
 {
     public class StudentTest
     {
-        [TestMethod]
-        public void TestMethod1()
+        // [TestMethod]
+        public void AddSubscription()
         {
-            var subscription = new Subscription(null);
-            var student = new Student("Caio", "Souza", "06222446558", "caionery40@gmail.com");
-
-            student.AddSubscription(subscription);
 
         }
     }

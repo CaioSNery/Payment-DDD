@@ -1,19 +1,36 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+
+using System.Diagnostics.Contracts;
+using Flunt.Validations;
 using PaymentContext.Domain.Enums;
+using PaymentContext.Shared.ValueObjects;
 
 namespace PaymentContext.Domain.ValueObjects
 {
-    public class Document
+    public class Document : ValueObject
     {
         public Document(string number, EDocumentType type)
         {
             Number = number;
             Type = type;
+
+            AddNotifications(new Contract<Document>()
+            .Requires()
+            .IsTrue(Validate(), "Document.Number", "Invalid Document")
+            );
         }
         public string Number { get; private set; }
         public EDocumentType Type { get; private set; }
+        private bool Validate()
+        {
+            if (Type == EDocumentType.CNPJ && Number.Length == 14)
+                return true;
+
+            if (Type == EDocumentType.CNPJ && Number.Length == 11)
+                return true;
+
+            return false;
+
+
+        }
     }
 }
