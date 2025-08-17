@@ -31,9 +31,15 @@ namespace PaymentContext.Testes.ValueObjects
             Assert.Fail();
         }
         [TestMethod]
-        public void ReturnSucessCPFIsInvalid()
+
+        [DataRow("06222446558")]
+        [DataRow("02323232223")]
+        [DataRow("85682646520")]
+        public void ReturnSucessCPFIsInvalid(string cpf)
         {
-            Assert.Fail();
+            var doc = new Document(cpf, EDocumentType.CPF);
+            Assert.IsTrue(doc.IsValid);
+
         }
     }
 }
