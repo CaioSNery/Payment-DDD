@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentContext.Shared", "Pa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentContext.Testes", "PaymentContext.Testes\PaymentContext.Testes.csproj", "{9C395E8E-0A97-4B18-B3C0-757125CE1E92}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentContext.Api", "PaymentContext.Api\PaymentContext.Api.csproj", "{9AF2F587-8D69-4BD5-B978-2ECBAD87C043}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentContext.Infra", "PaymentContext.Infra\PaymentContext.Infra.csproj", "{2C8E9E00-6FA3-4876-8B9B-E0259950A62D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +34,13 @@ Global
 		{9C395E8E-0A97-4B18-B3C0-757125CE1E92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C395E8E-0A97-4B18-B3C0-757125CE1E92}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C395E8E-0A97-4B18-B3C0-757125CE1E92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AF2F587-8D69-4BD5-B978-2ECBAD87C043}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AF2F587-8D69-4BD5-B978-2ECBAD87C043}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AF2F587-8D69-4BD5-B978-2ECBAD87C043}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AF2F587-8D69-4BD5-B978-2ECBAD87C043}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C8E9E00-6FA3-4876-8B9B-E0259950A62D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C8E9E00-6FA3-4876-8B9B-E0259950A62D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C8E9E00-6FA3-4876-8B9B-E0259950A62D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C8E9E00-6FA3-4876-8B9B-E0259950A62D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

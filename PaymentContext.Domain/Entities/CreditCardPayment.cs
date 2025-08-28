@@ -4,9 +4,10 @@ using PaymentContext.Domain.ValueObjects;
 
 namespace PaymentContext.Domain.Entities
 {
-    public class CreditCardPaymente : Payment
+    public class CreditCardPayment
+     : Payment
     {
-        public CreditCardPaymente(string cardHolderName,
+        public CreditCardPayment(string cardHolderName,
         string cardNumber,
         string lastTransactionNumber, string number,
         DateTime paidDate,

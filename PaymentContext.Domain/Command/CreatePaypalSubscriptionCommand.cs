@@ -38,9 +38,15 @@ namespace PaymentContext.Domain.Command
         {
             AddNotifications(new Contract<CreatePaypalSubscriptionCommand>()
             .Requires()
+            .IsEmail(Email, "Email", "Invalid email")
+            .IsGreaterThan(FirstName, 3, "FirstName", "First name must have at least 3 characters")
+            .IsGreaterThan(LastName, 3, "LastName", "Last name must have as least 3 characters")
 
             );
         }
+
+        public bool Valid => !Notifications.Any();
+        public bool Invalid => Notifications.Any();
 
 
     }

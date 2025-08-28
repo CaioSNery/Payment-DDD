@@ -7,6 +7,8 @@ namespace PaymentContext.Shared.Commands
 {
     public interface ICommandResult
     {
-
+        bool Sucess { get; }
+        string Message { get; }
+        object Data { get; }
     }
 }
