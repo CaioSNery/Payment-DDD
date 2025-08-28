@@ -14,11 +14,11 @@ A aplicação foi construída com **DDD (Domain-Driven Design)**, aplicando conc
 
 ⚙️ Tecnologias Utilizadas
 
-ASP.NET Core 8
-Entity Framework Core
-SQL Server (padrão, mas pode ser alterado para InMemory)
-Swagger para documentação
-Flunt (validações / notificações)
+- ASP.NET Core 8
+- Entity Framework Core
+- SQL Server (padrão, mas pode ser alterado para InMemory)
+- Swagger para documentação
+- Flunt (validações / notificações)
 
 🚀 Como Executar o Projeto
 
