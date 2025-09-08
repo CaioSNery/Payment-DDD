@@ -15,15 +15,9 @@ namespace PaymentContext.Testes.Queries
     {
         private IList<Student> _students;
 
-        public StudentQueriesTests()
+        public StudentQueriesTests(IList<Student> students)
         {
-            for (var i = 0; i <= 10; i++)
-            {
-                _students.Add(new Student(
-                new Name("Alunos", i.ToString())),
-                new Document("00000000", i.ToString(), EDocumentType.CPF),
-                new Email(i.ToString() + "@balta.io"));
-            }
+            _students = students;
         }
 
         [TestMethod]

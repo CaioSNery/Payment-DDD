@@ -1,5 +1,6 @@
 
 using System;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Diagnostics.Contracts;
 using Flunt.Validations;
 using PaymentContext.Domain.ValueObjects;
@@ -28,14 +29,22 @@ namespace PaymentContext.Domain.Entities
             );
         }
 
+
+
         public string Number { get; private set; }
         public DateTime PaidDate { get; private set; }
         public DateTime ExpireDate { get; private set; }
         public decimal Total { get; private set; }
         public decimal PaidTotal { get; private set; }
+
+        [NotMapped]
         public Address Address { get; private set; }
         public string Payer { get; private set; }
+
+        [NotMapped]
         public Document Document { get; private set; }
+
+        [NotMapped]
         public Email Email { get; private set; }
     }
 

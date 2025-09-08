@@ -49,7 +49,6 @@ namespace PaymentContext.Domain.Command
             );
         }
 
-        public bool Valid => !Notifications.Any();
-        public bool Invalid => Notifications.Any();
+
     }
 }

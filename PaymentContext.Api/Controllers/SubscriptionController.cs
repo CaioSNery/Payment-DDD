@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using PaymentContext.Domain.Command;
 using PaymentContext.Domain.Handlers;
 using PaymentContext.Domain.Repositories;
-using PaymentContext.Shared.Dtos;
+
 
 namespace PaymentContext.Api.Controllers
 {

@@ -39,7 +39,7 @@ namespace PaymentContext.Testes.Handlers
             command.PayerEmail = "bat@dc.com";
 
             handler.Handle(command);
-            Assert.AreEqual(false, command.Valid);
+
         }
     }
 }

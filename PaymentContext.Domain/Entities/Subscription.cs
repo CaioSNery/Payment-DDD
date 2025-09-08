@@ -1,4 +1,5 @@
 using System;
+using System.ComponentModel.DataAnnotations.Schema;
 using Flunt.Validations;
 using PaymentContext.Shared.Entities;
 
@@ -21,6 +22,7 @@ namespace PaymentContext.Domain.Entities
         public DateTime CreateDate { get; private set; }
         public DateTime LastUpdateDate { get; private set; }
 
+        [NotMapped]
         public IReadOnlyCollection<Payment> Payments { get; private set; }
 
         public void AddPayment(Payment payment)
