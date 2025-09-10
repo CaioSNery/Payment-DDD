@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "X4cqGCtnuFY=",
+  "dgSpecHash": "clThSkwoeyk=",
   "success": true,
   "projectFilePath": "C:\\Projetos\\PaymentContext\\PaymentContext.Testes\\PaymentContext.Testes.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,9 @@
     "C:\\Users\\Caio Nery\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512",
     "C:\\Users\\Caio Nery\\.nuget\\packages\\microsoft.applicationinsights\\2.23.0\\microsoft.applicationinsights.2.23.0.nupkg.sha512",
     "C:\\Users\\Caio Nery\\.nuget\\packages\\microsoft.codecoverage\\17.14.1\\microsoft.codecoverage.17.14.1.nupkg.sha512",
+    "C:\\Users\\Caio Nery\\.nuget\\packages\\microsoft.extensions.configuration\\9.0.9\\microsoft.extensions.configuration.9.0.9.nupkg.sha512",
+    "C:\\Users\\Caio Nery\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.9\\microsoft.extensions.configuration.abstractions.9.0.9.nupkg.sha512",
+    "C:\\Users\\Caio Nery\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.9\\microsoft.extensions.primitives.9.0.9.nupkg.sha512",
     "C:\\Users\\Caio Nery\\.nuget\\packages\\microsoft.net.test.sdk\\17.14.1\\microsoft.net.test.sdk.17.14.1.nupkg.sha512",
     "C:\\Users\\Caio Nery\\.nuget\\packages\\microsoft.testing.extensions.telemetry\\1.8.2\\microsoft.testing.extensions.telemetry.1.8.2.nupkg.sha512",
     "C:\\Users\\Caio Nery\\.nuget\\packages\\microsoft.testing.extensions.trxreport.abstractions\\1.8.2\\microsoft.testing.extensions.trxreport.abstractions.1.8.2.nupkg.sha512",

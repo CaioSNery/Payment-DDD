@@ -13,6 +13,9 @@ C:\Projetos\PaymentContext\PaymentContext.Testes\bin\Debug\net8.0\PaymentContext
 C:\Projetos\PaymentContext\PaymentContext.Testes\bin\Debug\net8.0\Flunt.dll
 C:\Projetos\PaymentContext\PaymentContext.Testes\bin\Debug\net8.0\Microsoft.ApplicationInsights.dll
 C:\Projetos\PaymentContext\PaymentContext.Testes\bin\Debug\net8.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
+C:\Projetos\PaymentContext\PaymentContext.Testes\bin\Debug\net8.0\Microsoft.Extensions.Configuration.dll
+C:\Projetos\PaymentContext\PaymentContext.Testes\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Projetos\PaymentContext\PaymentContext.Testes\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
 C:\Projetos\PaymentContext\PaymentContext.Testes\bin\Debug\net8.0\Microsoft.Testing.Extensions.Telemetry.dll
 C:\Projetos\PaymentContext\PaymentContext.Testes\bin\Debug\net8.0\Microsoft.Testing.Extensions.TrxReport.Abstractions.dll
 C:\Projetos\PaymentContext\PaymentContext.Testes\bin\Debug\net8.0\Microsoft.Testing.Extensions.VSTestBridge.dll
